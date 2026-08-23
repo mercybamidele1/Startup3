@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+margin: 0;
+padding: 0%;
+box-sizing: border-box;
+overflow-x: hidden;
+
+
+
+}
+
+body{
+font-family:'DM Sans',sans-serif;
+background-color: #2F1893;
+background-image: url(Image\ start.svg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 900px;
+
+
+}
+
+
+
+
+
+/*navigation*/
+nav{
+    display: flex;
+    justify-content:space-between;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    margin: 50px 100px;
+    
+    
+
+}
+
+.mobilenav{
+    display: none;
+}
+
+.nav-link{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+nav a{
+text-decoration: none;
+color: white;
+
+
+}
+
+.logo{
+    color: white;
+}
+
+#signin{
+    background-color: transparent;
+    color: white;
+    border: 1px solid;
+    border-radius: 22px;
+     font-family:"DMs Sans",sans-serif ;
+    font-size:16px ;
+    font-weight:300 ;
+    line-height:22px ;
+    color: white;
+    width: 90px;
+    height: 40px;
+    margin-right: 20px;
+    
+}
+
+#signup{
+    background-color: #482BE7;
+    color: white;
+    border: 2px solid;
+    border-radius: 22px;
+     font-family:"DMs Sans",sans-serif ;
+    font-size:16px ;
+    font-weight:300 ;
+    line-height:22px ;
+    color: white;
+    width: 90px;
+    height: 40px;
+    border: none;
+    
+}
+
+
+.hero{
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;  
+    
+}
+
+h1{
+    font-family:"DMs Sans",sans-serif ;
+    font-size:48px ;
+    font-weight:bold ;
+    line-height:70px ;
+    letter-spacing:-1px ;
+    text-align: center;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.cards{
+    display: flex;
+    margin-bottom: 50px;
+    gap: 20px;
+    width: 100%;
+    
+    
+    
+}
+
+
+.card1{
+    border-radius: 20px;
+    width: 100%;
+}
+
+.card2{
+    border-radius: 20px;
+    width: 100%;
+}
+
+.card3{
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+.cardbox{
+    display: flex;
+    gap: 30px;
+    
+}
+
+iframe{
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+}
+
+
+
+
+
+h2{
+    font-family:"DMs Sans",sans-serif ;
+    font-size:18px ;
+    font-weight:300 ;
+    line-height:32px ;
+    text-align: center;
+    margin-left: 190px;
+    color: white;
+    
+}
+
+p{
+    font-family:"DMs Sans",sans-serif ;
+    font-size:16px ;
+    font-weight:300 ;
+    line-height:26px ;
+    opacity: 70%;
+    margin-left: 190px;
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 768px) {
+
+    /* Hide desktop nav */
+    nav {
+        display: none;
+    }
+
+    
+
+    /* Base Navigation Bar */
+    .mobilenav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 20px 30px;
+        z-index: 1000; /* Keeps header & toggle icon on top */
+    }
+
+    /* Hide the actual checkbox element */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Make the SVG icon clickable */
+    .menu-btn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        z-index: 1001;
+    }
+
+    .menu-btn img {
+        width: 30px;
+        height: auto;
+    }
+
+    /* Fixed Dropdown Menu Drawer */
+    .mobile-menu {
+        display: none; 
+        position: fixed; 
+        top: 70px; 
+        left: 30%;
+        width: 50%;
+        background-color: white;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        padding: 20px;
+        z-index: 99; 
+        text-align: center;
+    }
+
+    .mobile-menu li {
+        list-style: none;
+        padding: 14px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .mobile-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .mobile-menu a {
+        color: #2F1893;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        display: block;
+    }
+
+    /* Toggle drawer display when checkbox is checked */
+    .menu-toggle:checked ~ .mobile-menu {
+        display: block;
+    }
+
+    /* Hero section mobile fixes */
+    .hero {
+        margin: 20px 20px 60px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 30px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    .card1, .card2, .card3 {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 220px;
+        border-radius: 20px;
+    }
+
+    .cardbox {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-left: 0; 
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    p {
+        margin-left: 0; 
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    p br, h1 br {
+        display: none; 
+    }
+}
