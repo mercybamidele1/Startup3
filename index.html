@@ -5,125 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>startup</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     <!--navigation-->
     <header>
-        <nav>
-    
-        <h3 class="logo">Startup3</h3>
-        
+        <!-- Desktop Nav -->
+        <nav class="desktop-nav">
+            <h3 class="logo">Startup 3</h3>
             <div class="nav-link">
-            <a href="#">Get App</a>
-             <a href="#">Features</a>
-              <a href="#">About</a>
-               <a href="#">F.A.Q</a>
-               </div>
-
+                <a href="#">Get App</a>
+                <a href="#">Features</a>
+                <a href="#">About</a>
+                <a href="#">F.A.Q</a>
+            </div>
             <div class="sin">
-               <button id="signin">Sign In</button>
-               <button id="signup">Sign Up</button>
-               </div>
-
+                <button id="signin">Sign In</button>
+                <button id="signup">Sign Up</button>
+            </div>
         </nav>
-        
 
+        <!-- Mobile Header (Logo + Hamburger) -->
+        <div class="mobile-header">
+            <h3 class="logo">Startup 3</h3>
 
-        <!--for mobile-->
+            <nav class="mobilenav">
+                <!-- Hidden checkbox controller -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-      <nav class="mobilenav">
-  <!-- Hidden checkbox controller -->
-  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <!-- Label attached to checkbox wrapping hamburger icon -->
+                <label for="menu-toggle" class="menu-btn">
+                    <img src="assets/image.png" alt="Menu">
+                </label>
 
-  <!-- Label attached to checkbox, wrapping your breadcrumb/hamburger SVG -->
-  <label for="menu-toggle" class="menu-btn">
-    <img src="assets/image.png" alt="">
-  </label>
-
-  
-
-  <!-- Mobile Dropdown Drawer -->
-   
-  <div class="mobile-menu">
-    
-
-
-      <!-- Regular Links -->
-      <li><a href="#">Get App</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#"></a>About</li>
-      <li><a href="#"></a>F.A.Q</li>
-
-  </div>
-</nav>
-
+                <!-- Mobile Dropdown Drawer -->
+                <div class="mobile-menu">
+                    <li><a href="#">Get App</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">F.A.Q</a></li>
+                </div>
+            </nav>
+        </div>
     </header>
 
-
-
-   
-
-
     <!--hero section-->
-
-
-
-        <section class="hero">
-
-    <h1> Startup 3.Suit Up Your <br>
-         Startup</h1>
-
+    <section class="hero">
+        <h1> Startup 3.Suit Up Your <br> Startup</h1>
          <div class="cards">
-
             <div class="card1">
-            <iframe width="400" height="315" src="https://www.youtube.com/embed/p3k0xGWyjiM?si=bqkh3V56v6RngeK1"
-             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-             encrypted-media; gyroscope; picture-in-picture;
-             web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <iframe width="400" height="315" src="https://www.youtube.com/embed/p3k0xGWyjiM?si=bqkh3V56v6RngeK1"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+              encrypted-media; gyroscope; picture-in-picture;
+              web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
 
-
                <div class="card2">
-            <iframe width="400" height="315" src="https://www.youtube.com/embed/feaGRgHAMh8?si=mmJbckKxcSNr3Ga5"
-             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-              encrypted-media; gyroscope; picture-in-picture;
-               web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <iframe width="400" height="315" src="https://www.youtube.com/embed/feaGRgHAMh8?si=mmJbckKxcSNr3Ga5"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+               encrypted-media; gyroscope; picture-in-picture;
+                web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                </div>
 
-
             <div class="card3">
-            <iframe width="400" height="315" src="https://www.youtube.com/embed/jfLmLEfiHYw?si=x-8TKupz9B7_TCII" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-             encrypted-media; gyroscope; picture-in-picture;
-             web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-             </div>
-
-
+             <iframe width="400" height="315" src="https://www.youtube.com/embed/jfLmLEfiHYw?si=x-8TKupz9B7_TCII" 
+             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+              encrypted-media; gyroscope; picture-in-picture;
+              web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
            </div>
-
 
            <div class="cardbox">
-            <div class="cardbox1">
-            <h2>Drag and Drop Generator</h2>
-            <p>Build your site quickly with an intuitive and <br>
-                easy-to-use drag and drop interface.</p>
+             <div class="cardbox1">
+             <h2>Drag and Drop Generator</h2>
+             <p>Build your site quickly with an intuitive and <br> easy-to-use drag and drop interface.</p>
+            </div>
 
-           </div>
-
-
-        
-
-         <div class="cardbox2">
-            <h2>Share & Export to HTML</h2>
-            <p>Save time and energy by showing a <br>
-                 developer about how things.</p>
+          <div class="cardbox2">
+             <h2>Share & Export to HTML</h2>
+             <p>Save time and energy by showing a <br> developer about how things.</p>
          </div>
         </div>
-
-        </section>
-
-
-         </body>
-         </html>
-    
+    </section>
+</body>
+</html>
